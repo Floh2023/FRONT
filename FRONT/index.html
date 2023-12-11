@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productos - Mi tienda</title>
+    <link rel="stylesheet" type="text/css" href="Flask/Static/css/style3.css">
+    <link rel="stylesheet" type="text/css" href="Flask/Static/css/carrito.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <header class="header-mobile">
+        3 Cuotas sin Intereses - Envio Gratis
+    </header>
+    
+    <nav class="navProducto">
+        <div class="logo">
+            <img src="Flask/Static/img/Logo.jpg" alt="Logo de la marca">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li></li>
+            <li><a href="InicioF.html">Inicio</a></li>
+            <li><a href="index.html">Tienda</a></li>
+            <li class="active"><a href="ProductoF.html">Productos</a></li>
+            <li><a href="NosotrosF.html">Nosotros</a></li>
+            <li><a href="Inicio_Sesion.html">Stock</a></li>
+           
+        </ul>
+    </nav>
+
+    <div></div>
+
+    <div class="container">
+        <h1>Diamond Shoes</h1>
+        <h2>Calidad & Estilo</h2>
+        <div class="cards">
+            <div class="card" onclick="expandCard(this)">
+                <img class="zoom" src="Flask/Static/img/Nike1v1.jpg" alt="Producto 1">
+                <h3>Nike Air Force</h3>
+                <p>Precio: $50.000</p>
+                <p>Talle: 36,37,38</p>
+                
+                <button class="buy-button" onclick="addToCart('Nike Air Force', 50000)">Comprar</button>
+
+                <div class="description">
+                    <p>Zapatilla con capellada de cuero, cómoda y urbana. Ideal para un look relajado y juvenil.</p>
+                </div>
+            </div>
+            <div class="card" onclick="expandCard(this)">
+                <img class="zoom" src="Flask/Static/img/Nike2v1.jpg" alt="Producto 2">
+                <h3>Nike Air Force</h3>
+                <p>Precio: $55.000</p>
+                <p>Talle: 40,41,42</p>
+                <button class="buy-button" onclick="addToCart('Nike Air Force', 55000)">Comprar</button>
+
+                <div class="description">
+                    <p>Zapatilla con capellada de cuero, cómoda y urbana. Ideal para un look relajado y juvenil.</p>
+                </div>
+            </div>
+            <div class="card" onclick="expandCard(this)">
+                <img class="zoom" src="Flask/Static/img/ZapatillaUrbanaV1.jpg" alt="Producto 3">
+                <h3>Zapatillas Urbanas</h3>
+                <p>Precio: $25000</p>
+                <p>Talle: 36,37,40,42</p>
+                <button class="buy-button" onclick="addToCart('Zapatillas Urbanas', 25000)">Comprar</button>
+                <div class="description">
+                    <p>Zapatilla de capellada de ecocuero, ligera, unisex. Marca alternativa estilo air force.</p>
+                </div>
+            </div>
+            <div class="card" onclick="expandCard(this)">
+                <img class="zoom" src="Flask/Static/img/Zapato vestir.jpg" alt="Producto 4">
+                <h3>Zapato Hombre</h3>
+                <p>Precio: $28000</p>
+                <p>Talle: 40,41,42</p>
+                <button class="buy-button" onclick="addToCart('Zapato Hombre', 28000)">Comprar</button>
+                <div class="description">
+                    <p>Zapato de cuero, elegante, versatil. Ideal para ocaciones formales.</p>
+                </div>
+            </div>
+            <div class="card" onclick="expandCard(this)">
+                <img class="zoom" src="Flask/Static/img/ZapatoV2V1.jpg" alt="Producto 5">
+                <h3>Zapato Hombre</h3>
+                <p>Precio: $30500</p>
+                <p>Talle: 40,41,42</p>
+                <button class="buy-button" onclick="addToCart('Zapato Hombre', 30500)">Comprar</button>
+                <div class="description">
+                    <p>Zapado lÍnea vegana. Clásico y formal.</p>
+                </div>
+            </div>
+            <div class="card" onclick="expandCard(this)">
+                <img class="zoom" src="Flask/Static/img/ZapatoVestirDamaV2.jpg" alt="Producto 6">
+                <h3>Zapato Dama</h3>
+                <p>Precio: $20000</p>
+                <p>Talle: M</p>
+                <button class="buy-button" onclick="addToCart('Zapato Dama', 20000)">Comprar</button>
+                <div class="description">
+                    <p>Zapatos ecologicos y elegantes. De estructura liviana, ideales para oficina y eventos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="carrito-container">
+            <div class="carrito">
+                <h2>Carrito de compras</h2>
+                <ul id="carrito-lista"></ul>
+                <p>Total: $<span id="total">0</span></p>
+                <button onclick="realizarCompra()">Realizar Compra</button>
+            </div>
+        </div>
+
+    <div class="BarraSuperior2">
+
+        <div class="PrimeraFila">
+            <div class="redes">
+                <a href="https://www.facebook.com" target="_blank">
+                    <iconify-icon class="icono" icon="ri:facebook-fill" style="color: black;" width="22"></iconify-icon>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <iconify-icon class="icono" icon="uim:twitter" style="color: black;" width="22"></iconify-icon>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <iconify-icon class="icono" icon="bxl:instagram" style="color: black;" width="22"></iconify-icon>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <iconify-icon class="icono" icon="uit:youtube" style="color: black;" width="22"></iconify-icon>
+                </a>
+                <a href="https://api.whatsapp.com" target="_blank">
+                    <iconify-icon icon="uim:whatsapp" style="color: black;" width="22" class="icono"></iconify-icon>
+                </a>
+            </div>
+        </div>
+        
+       
+    </div>
+
+     <!--<div class="PrimeraFila">
+            <div class="redes">
+                <iconify-icon class="icono" icon="ri:facebook-fill" style="color: black;" width="22"></iconify-icon>
+                <iconify-icon class="icono" icon="uim:twitter" style="color: black;" width="22"></iconify-icon>
+                <iconify-icon class="icono" icon="bxl:instagram" style="color: black;" width="22"></iconify-icon>
+                <iconify-icon class="icono" icon="uit:youtube" style="color: black;" width="22"></iconify-icon>
+                <iconify-icon icon="uim:whatsapp" style="color: black;" width="22" class="icono"></iconify-icon>
+            </div>
+                           
+            </div> -->
+
+    <div><h2 class="tituloP">"Un zapato para cada momento"</h2></div>
+
+    <div class="gallery">
+        
+    </div>
+
+
+    <footer class="footer">
+      <p></p>
+      <p> Correo: ds@gmail.com | Teléfono: 123456789 </p>
+      <p></p>
+      <p> Buenos Aires</p>
+      <p> Argentina</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="Flask/Static/js/script.js"></script>
+    <script src="Flask/Static/js/carrito.js"></script>
+
+    
+   
+</body>
+</html>

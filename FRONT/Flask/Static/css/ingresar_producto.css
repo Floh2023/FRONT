@@ -1,0 +1,152 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.container-form{
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.TituloBC {
+    text-align: center;
+    font-size: 36px;
+}
+
+.container-form {
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.logo img {
+    height: 120px;
+    width: 120px;
+}
+
+/**form{
+    background-color: #333;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 3vw;
+    display: GRID;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}**/
+
+/**form{
+    background-color: #333;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 3vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;} **/
+
+form {
+    background-color: #333;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 3vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño igual */
+    grid-gap: 10px; /* Espacio entre las columnas */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Alinea el texto en el centro (para el botón) */
+    
+}
+form:hover {
+    background-color: #555; /* Cambia el color al hacer hover */
+}
+
+.abrir_registros {
+    /* Estilos para el botón */
+    margin: 10px; /* Ajusta según sea necesario */
+    padding: 15px 20px; /* Ajusta según sea necesario */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Indica que es un elemento interactivo */
+}
+
+
+.entrada{
+    margin-bottom: 2vh;
+}
+
+label{
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+
+button {
+    padding: 0.2vw 0.3vh;
+    font-size: 1.6vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #6a6767;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ff6666;
+}
+
+.modificar{
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color: #6a6767; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+@media screen and (max-width: 600px) {
+
+    form {
+        width: 80%;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    input,
+    button {
+        font-size: 25px;
+    }
+
+    
+   .modificar{
+    font-size: 18px;
+   }
+   .abrir_registros{
+    font-size: 18px;
+   }
+}

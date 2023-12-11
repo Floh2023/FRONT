@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <link rel="stylesheet" type="text/css" href="Flask/Static/css/iniciar_sesion.css">
+    <link rel="stylesheet" type="text/css" href="Flask/Static/css/style3.css">
+ 
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+    <nav class="navProducto">
+        <div class="logo">
+            <img src="Flask/Static/img/Logo.jpg" alt="Logo de la marca">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li></li>
+            <li><a href="InicioF.html">Inicio</a></li>
+            <li><a href="index.html">Tienda</a></li>
+            <li class="active"><a href="ProductoF.html">Productos</a></li>
+            <li><a href="NosotrosF.html">Nosotros</a></li>
+            <li><a href="Flask/templates/ingresar_producto.html">Stock</a></li>
+           
+        </ul>
+    </nav>
+
+    <div class="container-tit">
+        <h1 class="TituloBC" >Diamond Shoes</h1>
+        <h2  class="TituloBC" >Calidad & Estilo</h2>
+
+    </div>
+
+           
+
+    <form id="log-form">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="button" onclick="login()">Iniciar Sesión</button>
+    </form>
+
+    <footer class="footer">
+        <p></p>
+        <p> Correo: ds@gmail.com | Teléfono: 123456789 </p>
+        <p></p>
+        <p> Buenos Aires</p>
+        <p> Argentina</p>
+      </footer>
+
+    <p id="result"></p>
+
+    <script src="Flask/Static/js/Inicio_Sesion.js"></script>
+    <script src="flask/Static/js/script.js"></script>
+
+
+</body>
+</html>
+
+<script src="Flask/Static/js/Inicio_Sesion.js"></script>

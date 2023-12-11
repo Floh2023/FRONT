@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Static/css/ingresar_producto.css">
+    <link rel="stylesheet" href="../Static/css/style3.css">
+
+
+    <title>Registrar</title>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <nav class="navProducto">
+        <div class="logo">
+            <img class="logo-a" src="../Static/img/Logo.jpg" alt="Logo de la marca">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li></li>
+            <li><a href="../../InicioF.html">Inicio</a></li>
+            <li><a href="../../index.html">Tienda</a></li>
+            <li class="active"><a href="../../ProductoF.html">Productos</a></li>
+            <li><a href="../../NosotrosF.html">Nosotros</a></li>
+            <li><a href="../templates/ingresar_producto.html">Stock</a></li>
+           
+        </ul>
+    </nav>
+
+    <main>
+
+        
+    
+            <h1 class="TituloBC" >Control Stock</h1>
+            
+            <h2 class="TituloBC"></h2>
+            
+        <section>
+            
+
+
+            <div class="container-form">
+
+
+                <form action="">
+                    
+                    <div class="entrada">
+                        <label for="nombre">Producto:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="precio">Precio:</label>
+                        <input type="number" name="precio" id="precio">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="stock">Stock:</label>
+                        <input type="number" name="stock" id="stock">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="talle">Talle:</label>
+                        <input type="number" name="talle" id="talle">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="lote">Lote:</label>
+                        <input type="number" name="lote" id="lote">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="fecha">Fecha:</label>
+                        <input type="number" name="fecha" id="fecha">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="imagen">Imagen:</label>
+                        <input type="text" name="imagen" id="imagen">
+                    </div>
+
+                    <div class="entrada">
+                        <button class="modificar" type="button" onclick="guardar()">Guardar</button>
+                    </div>
+
+                </form>
+
+                <a href="../tabla_productos.html">
+                    <button class="abrir_registros">Abrir Registros</button>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p></p>
+        <p> Correo: ds@gmail.com | Teléfono: 123456789 </p>
+        <p></p>
+        <p> Buenos Aires</p>
+        <p> Argentina</p>
+   </footer>
+
+    <script src="../Static/js/ingresar_producto.js"></script>
+    <script src="../Static/js/script.js"></script>
+
+</body>
+
+</html>

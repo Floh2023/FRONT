@@ -1,0 +1,250 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form{
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px, 30px, 30px, 30px;
+    margin: 50px,50px, 50px, 50px;
+}
+
+.logo img {
+    height: 120px;
+    width: 120px;
+}
+
+.container-tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 50px; /* Ajusta la cantidad según sea necesario */
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+/**form{
+    background-color: #333;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 3vw;
+    display: GRID;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}**/
+
+/**form{
+    background-color: #333;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 3vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;} **/
+
+    form {
+        background-color: #333;
+        width: 30vw;
+        height: 30vh;
+        border-radius: 3vw;
+        display: flex;
+        flex-direction: column; /* Para que los elementos estén uno debajo del otro */
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Alinea el texto en el centro (para el botón) */
+        margin: 0 auto; /* Centra horizontalmente el formulario */
+    }
+    
+   
+form:hover {
+    background-color: #555; /* Cambia el color al hacer hover */
+}
+
+.abrir_registros {
+    /* Estilos para el botón */
+    margin: 10px; /* Ajusta según sea necesario */
+    padding: 15px 20px; /* Ajusta según sea necesario */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Indica que es un elemento interactivo */
+}
+
+
+.entrada{
+    margin-bottom: 2vh;
+}
+
+label{
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+
+button {
+    padding: 0.2vw 0.3vh;
+    font-size: 1.6vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #6a6767;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ff6666;
+}
+
+.modificar{
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color: #6a6767; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+@media screen and (max-width:768px){
+    form{
+        background-color: #001F3F;
+        width: 50vw;
+        height: 50vh;
+        border-radius: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label{
+        font-size: 4vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: aliceblue;
+    }
+
+    a{
+        font-size: 4vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+
+    .modificar{
+        color: #f2f2f2;
+        margin-right: 2vh;
+        background-color #6a6767; /* Color de fondo */
+        color: white; /* Color del texto */
+        padding: 0.5vw 3vh; /* Relleno interno */
+        border: none; /* Quita el borde */
+        border-radius: 2vw; /* Borde redondeado */
+        text-align: center; /* Alineación del texto */
+        text-decoration: none; /* Quita el subrayado predeterminado */
+        display: inline-block; /* Mostrar como bloque en línea */
+        font-size: 3vw; /* Tamaño de fuente */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    }
+}
+
+@media screen and (max-width:425px){
+    form{
+        background-color: #001F3F;
+        width: 80vw;
+        height: 40vh;
+        border-radius: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label{
+        font-size: 6vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: aliceblue;
+    }
+
+    a{
+        font-size: 6vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+
+    .modificar{
+        color: #f2f2f2;
+        margin-right: 2vh;
+        background-color: #6a6767; /* Color de fondo */
+        color: white; /* Color del texto */
+        padding: 0.5vw 3vh; /* Relleno interno */
+        border: none; /* Quita el borde */
+        border-radius: 2vw; /* Borde redondeado */
+        text-align: center; /* Alineación del texto */
+        text-decoration: none; /* Quita el subrayado predeterminado */
+        display: inline-block; /* Mostrar como bloque en línea */
+        font-size: 5vw; /* Tamaño de fuente */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    }
+}
+
+
+@media screen and (max-width:320px){
+    form{
+        background-color: #001F3F;
+        width: 80vw;
+        height: 50vh;
+        border-radius: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label{
+        font-size: 6vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: aliceblue;
+    }
+
+    a{
+        font-size: 6vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+    
+}
+
+

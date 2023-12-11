@@ -1,0 +1,66 @@
+/* Estilos para el área del carrito */
+.carrito {
+    border: 1px solid #333;
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.carrito h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#carrito-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#carrito-lista li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+#total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* ... (resto de estilos) */
+
+/* Estilos para el área del carrito */
+.carrito-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carrito {
+    border: 1px solid #333;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px; /* Ancho deseado de la tarjeta del carrito */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (resto de estilos) */
+
